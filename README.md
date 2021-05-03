@@ -16,11 +16,11 @@ security
 5. `show users`
 
 #### Create user
-`use products`
+`use <db name>`
 ````javascript
 db.createUser(
    {
-     user: "accountUser",
+     user: "username",
      pwd: passwordPrompt(),  // Or  "<cleartext password>"
      roles: [ "readWrite", "dbAdmin" ]
    }
