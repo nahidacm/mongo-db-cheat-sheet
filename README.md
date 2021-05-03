@@ -14,3 +14,5 @@ security
 3. `show users`
 4. `db.auth('admin', 'hakasepasswordformongodbadmin')`
 5. `show users`
+
+https://developer.mongodb.com/quickstart/cheat-sheet/
