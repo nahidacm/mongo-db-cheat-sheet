@@ -15,4 +15,18 @@ security
 4. `db.auth('admin', 'hakasepasswordformongodbadmin')`
 5. `show users`
 
+#### Create user
+`use products`
+````javascript
+db.createUser(
+   {
+     user: "accountUser",
+     pwd: passwordPrompt(),  // Or  "<cleartext password>"
+     roles: [ "readWrite", "dbAdmin" ]
+   }
+)
+````
+
+#### CRUD
+
 https://developer.mongodb.com/quickstart/cheat-sheet/
